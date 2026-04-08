@@ -390,3 +390,7 @@ MIT License - feel free to use this project for your own resume builder.
 ## Support
 
 For support, email support@resumeai.com or open an issue in the repository.
+
+
+# Developers
+
