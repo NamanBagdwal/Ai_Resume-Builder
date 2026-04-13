@@ -49,12 +49,12 @@ A comprehensive, AI-powered resume builder application built with React, Node.js
 
 ## 📋 Pages & Screens
 
-- ✅ **Landing Page** - Hero section with feature highlights
-- ✅ **Auth Pages** - Sign up / Login (JWT-based)
-- ✅ **Dashboard** - All saved resumes + version history
-- ✅ **Resume Editor** - Live builder with AI sidebar
-- ⏳ **Job Match Analyzer** - JD input + match results
-- ⏳ **Export & Share** - PDF download, shareable links
+- **Landing Page** - Hero section with feature highlights
+- **Auth Pages** - Sign up / Login (JWT-based)
+- **Dashboard** - All saved resumes + version history
+- **Resume Editor** - Live builder with AI sidebar
+- **Job Match Analyzer** - JD input + match results
+- **Export & Share** - PDF download, shareable links
 
 ## 🚀 Quick Start
 
