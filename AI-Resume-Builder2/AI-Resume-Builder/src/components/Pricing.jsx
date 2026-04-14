@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Pricing() {
+const Pricing = React.memo(() => {
   const plans = [
     {
       id: 1,
@@ -8,7 +8,7 @@ function Pricing() {
       price: '0',
       description: 'Perfect for getting started',
       features: [
-        ' 1 resume',
+        '1 resume',
         'Basic templates',
         'Real-time preview',
         'PDF export',
@@ -63,25 +63,35 @@ function Pricing() {
 
         <div className="pricing-grid">
           {plans.map(plan => (
-            <div key={plan.id} className={`pricing-card ${plan.popular ? 'popular' : ''}`}>
-              {plan.popular && <div className="popular-badge">Most Popular</div>}
-              
+            <div
+              key={plan.id}
+              className={`pricing-card ${plan.popular ? 'popular' : ''}`}
+            >
+              {plan.popular && (
+                <div className="popular-badge">Most Popular</div>
+              )}
+
               <h3 className="plan-name">{plan.name}</h3>
               <p className="plan-description">{plan.description}</p>
-              
+
               <div className="plan-price">
                 <span className="currency">$</span>
                 <span className="amount">{plan.price}</span>
                 <span className="period">/month</span>
               </div>
 
-              <button className={`btn ${plan.popular ? 'btn-primary' : 'btn-secondary'} btn-block`}>
+              <button
+                className={`btn ${
+                  plan.popular ? 'btn-primary' : 'btn-secondary'
+                } btn-block`}
+                aria-label={`Select ${plan.name} plan`}
+              >
                 {plan.cta}
               </button>
 
               <div className="plan-features">
                 {plan.features.map((feature, idx) => (
-                  <div key={idx} className="feature">
+                  <div key={`${plan.id}-${idx}`} className="feature">
                     <span className="check">✓</span>
                     {feature}
                   </div>
@@ -93,6 +103,6 @@ function Pricing() {
       </div>
     </section>
   )
-}
+})
 
 export default Pricing
