@@ -1,0 +1,265 @@
+/* Base Template Styles */
+.resume-template {
+  background: white;
+  width: 100%;
+  max-width: 800px; /* typical A4 width ratio */
+  min-height: 1056px; /* typical A4 height ratio */
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 40px;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   Modern Template
+   ========================================= */
+.modern-template {
+  font-family: 'Outfit', sans-serif;
+}
+.modern-header {
+  text-align: center;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.modern-name {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.modern-contact {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #64748b;
+  flex-wrap: wrap;
+}
+.modern-contact a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+.modern-section {
+  margin-bottom: 25px;
+}
+.modern-section-title {
+  color: #3b82f6;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+.modern-summary {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.modern-item {
+  margin-bottom: 15px;
+}
+.modern-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+.modern-item-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+.modern-item-date {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+.modern-item-subtitle {
+  font-weight: 500;
+  color: #3b82f6;
+  margin-bottom: 5px;
+}
+.modern-item-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #475569;
+}
+.modern-item-tech {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+.modern-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.modern-skill-group {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+/* =========================================
+   Classic Template
+   ========================================= */
+.classic-template {
+  font-family: 'Times New Roman', serif;
+}
+.classic-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.classic-name {
+  font-size: 2.2rem;
+  margin: 0 0 5px 0;
+}
+.classic-contact {
+  font-size: 0.9rem;
+}
+.classic-contact a {
+  color: #000;
+}
+.classic-section {
+  margin-bottom: 20px;
+}
+.classic-section-title {
+  font-size: 1.1rem;
+  margin: 0;
+}
+.classic-divider {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 4px 0 10px 0;
+}
+.classic-summary {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.classic-item {
+  margin-bottom: 12px;
+}
+.classic-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+.classic-position {
+  font-size: 1.05rem;
+}
+.classic-company {
+  font-style: italic;
+}
+.classic-item-date {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.classic-item-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.classic-item-tech {
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+.classic-skill-group {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+/* =========================================
+   Minimal Template
+   ========================================= */
+.minimal-template {
+  font-family: 'Roboto', sans-serif;
+  padding: 40px 50px;
+}
+.minimal-header {
+  margin-bottom: 30px;
+}
+.minimal-name {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #222;
+  margin: 0 0 10px 0;
+}
+.minimal-contact {
+  display: flex;
+  gap: 20px;
+  font-size: 0.85rem;
+  color: #666;
+}
+.minimal-contact a {
+  color: #666;
+  text-decoration: none;
+}
+.minimal-section {
+  margin-bottom: 30px;
+}
+.minimal-section-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.minimal-summary {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+.minimal-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+.minimal-item {
+  margin-bottom: 20px;
+}
+.minimal-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+.minimal-item-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+}
+.minimal-item-date {
+  font-size: 0.85rem;
+  color: #888;
+}
+.minimal-item-subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+.minimal-item-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
+.minimal-item-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+.minimal-skill-group {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+.minimal-skill-group strong {
+  display: block;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 3px;
+}

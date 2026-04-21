@@ -1,0 +1,275 @@
+/* =========================================================================
+   Resume Templates Styling
+   We support three templates: Modern (default), Classic, and Minimal.
+   These styles apply to the elements within .template-modern, 
+   .template-classic, .template-minimal.
+   ========================================================================= */
+
+/* Common Variables for Templates */
+:root {
+  --tpl-modern-primary: #2563eb;
+  --tpl-modern-text: #1f2937;
+  --tpl-modern-bg: #ffffff;
+  
+  --tpl-classic-primary: #0f172a;
+  --tpl-classic-text: #334155;
+  --tpl-classic-bg: #f8fafc;
+  
+  --tpl-minimal-primary: #111827;
+  --tpl-minimal-text: #4b5563;
+  --tpl-minimal-bg: #ffffff;
+}
+
+/* Base structural wrapper for preview content to normalize it */
+.template-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 1056px; /* A4 aspect ratio height (~8.5x11 at 96dpi) */
+  background: white;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+
+.template-wrapper * {
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------
+   1. Modern Template 
+   Dynamic, colorful left border headers, robust sans-serif fonts
+   ------------------------------------------------------------------------- */
+.template-modern {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--tpl-modern-text);
+  line-height: 1.6;
+}
+
+.template-modern .preview-header {
+  text-align: left;
+  border-bottom: 3px solid var(--tpl-modern-primary);
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.template-modern .preview-name {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--tpl-modern-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.template-modern .preview-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.template-modern h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--tpl-modern-primary);
+  text-transform: uppercase;
+  margin: 24px 0 16px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.template-modern h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background: var(--tpl-modern-primary);
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.template-modern .preview-entry {
+  margin-bottom: 16px;
+}
+
+.template-modern .entry-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.template-modern .entry-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.template-modern .entry-subtitle {
+  font-size: 15px;
+  color: var(--tpl-modern-primary);
+  font-weight: 500;
+}
+
+.template-modern .entry-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.template-modern .entry-desc {
+  font-size: 14px;
+  color: #374151;
+  margin-top: 6px;
+}
+
+/* -------------------------------------------------------------------------
+   2. Classic Template
+   Formal formatting, serif fonts, centered headers
+   ------------------------------------------------------------------------- */
+.template-classic {
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  color: var(--tpl-classic-text);
+  line-height: 1.5;
+}
+
+.template-classic .preview-header {
+  text-align: center;
+  border-bottom: 1px solid var(--tpl-classic-primary);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.template-classic .preview-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--tpl-classic-primary);
+  margin-bottom: 12px;
+}
+
+.template-classic .preview-contact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.template-classic h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--tpl-classic-primary);
+  text-align: center;
+  margin: 20px 0 15px;
+  border-top: 1px dashed #cbd5e1;
+  border-bottom: 1px dashed #cbd5e1;
+  padding: 6px 0;
+  letter-spacing: 1px;
+}
+
+.template-classic .entry-header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.template-classic .entry-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.template-classic .entry-subtitle {
+  font-size: 14px;
+  font-style: italic;
+  color: #475569;
+}
+
+.template-classic .entry-date {
+  font-size: 13px;
+  font-style: italic;
+  color: #475569;
+}
+
+.template-classic .entry-desc {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* -------------------------------------------------------------------------
+   3. Minimal Template
+   Very clean, lots of whitespace, muted colors, grid alignment
+   ------------------------------------------------------------------------- */
+.template-minimal {
+  font-family: 'Outfit', 'Roboto', sans-serif;
+  color: var(--tpl-minimal-text);
+  line-height: 1.6;
+}
+
+.template-minimal .preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.template-minimal .preview-name {
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--tpl-minimal-primary);
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.template-minimal .preview-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.template-minimal .section-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.template-minimal h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+.template-minimal .preview-entry {
+  margin-bottom: 20px;
+}
+
+.template-minimal .entry-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.template-minimal .entry-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 2px;
+}
+
+.template-minimal .entry-date {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.template-minimal .entry-desc {
+  font-size: 14px;
+  margin-top: 8px;
+}
